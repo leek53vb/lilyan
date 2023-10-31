@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>향료 중량 계산기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             display: flex;
@@ -27,7 +28,7 @@
         }
 
         .input-group input, .result-group input {
-            width: 25%;
+            width: 50%;
             padding: 0.5em;
             border: 1px solid #ccc;
             border-radius: 4px;
@@ -40,6 +41,12 @@
 
         .btn-calculate {
             margin-bottom: 1em;
+        }
+
+        @media (min-width: 600px) {
+            .input-group input, .result-group input {
+                width: 25%;
+            }
         }
     </style>
 </head>
